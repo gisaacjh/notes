@@ -1,0 +1,65 @@
+para instalar react
+
+npm install -g 
+
+create-react-app namerepository
+ 
+
+para importar librerias 
+
+import React from 'react'; 
+import ReactDOM from 'react-dom';
+
+import example from './example';
+
+//para llamarlo
+
+ReactDOM.render(<example />, document.getById('') )
+
+
+//para en el archivo. Usar llaves en react para usar el componente
+//se puede importar un archivo .css
+
+import React, { Component } from 'react';
+//dentro del componente escribir el render y retornar
+
+//dentro del return se pone el maquetado y lo imprime, se cierra con parentesis el return y solo se debe retornar un elemento
+
+class example extends Component {
+	render() {
+		return (<div>
+			<p>EXAMPLE</p>
+			</div>);
+	}
+}
+
+export default example
+
+-----------------------------------------
+-----------------------------------------
+elementos jsx
+
+
+
+para llamar un componente dentro de otro componente <classnameexample />
+
+se debe importar cada componente separado en otro archivo
+
+
+/// 1.importar react 2.declarar el componente, 3.exportarlo
+
+
+
+
+
+-----------------------------
+---------------------------
+
+PASOS PARA USAR REACT JS
+
+1. Install 'npm install -g create-react-app'
+2. Create project ' create-react-app PROJECT_NAME'
+3. Run server 'npm start'
+4. Create a component to render your name
+5. Create a component to render your favourite movie
+

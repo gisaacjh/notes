@@ -1,0 +1,31 @@
+para instalar react
+
+npm install -g 
+
+create-react-app namerepository
+ 
+
+para importar librerias 
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import example from './example';
+
+//para llamarlo
+
+ReactDOM.render(<example />, document.getById('') )
+
+
+//para en el archivo. Usar llaves en react para usar el componente
+
+import React, { Component } from 'react';
+//dentro del componente escrivir el render y retornar
+
+class example extends Component {
+	render() {
+		return '';
+	}
+}
+
+export default example

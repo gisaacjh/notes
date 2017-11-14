@@ -1,0 +1,59 @@
+HACER UN BRANCH CON UN PULL REQUEST EN GIT HUB
+
+
+crear repositorio en github 
+
+-----------------------
+en atom 
+# raedme. md
+
+this docs are in master branch.
+
+
+git add readme.md
+git push -u origin master
+
+
+para crear una nueva rama desde master
+
+git checkout -b nombreRama
+------------------------------
+ ahora en #readme añado
+
+this docs are in addDocsFromOtherBranch
+
+gst  ----git status
+
+git commit -m 
+git push origin AddDocsFromOtherBranch
+-----------------------
+DESPUES DEL MERGE, PARA GUARDAR LOCALMENTE EL MERGE EN MASTER UTLIZAMOS
+git pull oirigin master --------------- master es el nombre del archivo masteer, le podmemos poner el nombre que querramos pero le ponemos master por buena práctica.
+
+-----------------------------
+-----------------------------
+Steps:
+
+1.Create branch
+
+git checkout -b NAME
+
+2. Write new code and push to new branch.
+
+git add .
+git commit -m "..."
+git push origin BRANCH_NAME
+
+3. Pull Request -- PR
+
+Go to PR tab
+Create PR with new branch
+...
+Click green button "Merge pull request"
+
+4. Get all new changes
+
+Make sure you are on master branch.
+
+git pull origin master
+

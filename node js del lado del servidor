@@ -1,0 +1,75 @@
+JAVASCRIPT DEL LADO DEL SERVIDOR
+
+
+1. CREAR un .js ARCHIVO DESDE LA TERMINAL
+
+node ANTES DEL ARCHIVO QUE VOY A EJECUTAR/ O EN ATOM USAR UN WINDOW. LA ARQUITECTURA DE NODE ES MODULAR
+HAY FUNCIONES DETERMINADAS 
+- console.log(global);
+- _dirname  trae el path del archivo
+- let userName = process.argv[2]   
+
+
+EN NODE SE ESCRIBE CÓDIGO NATIVO
+
+const fs = require('fs');
+
+
+fs.mkdirSync(nombreCarpeta)
+
+
+crear plantilla para html
+
+let htmlTemplate = 'hacer una plantilla de html'
+
+segundo cramos un archivo con :
+recibe cuatro aparametros 
+
+fs.writeFile(dir, filename, data, callback);
+
+fs.writeFileSync(path, encoding, callback);
+
+
+importar una libreria para crear el serivdor
+
+const http = require('http')
+
+------------------------------------------
+------------------------------------------
+
+usamos el framework de express 
+
+ 
+npm install -y    genera la esturctura basica sin pregutntar
+
+npm install --sev-dev express
+npm install --save-dev fs-extra
+
+
+
+//init app
+
+const app = express();
+
+
+guardo en una variable const PATH = `${_dirname}/src/views/index.html`;   crear la estructura de path que quiero tener, aunque aun no existen
+
+
+//.json 
+
+
+app.use('/', (requ, res) => {
+	fs
+	  .readFile(PATH, encode) ------ asi por ejemplo   .readFile(PATH, 'utf-8')		
+
+})
+
+
+
+para decirle que puerto va a correr
+
+
+const PORT = process.env.PORT || 3000;  -----si tengo undefined
+app.listen(PORT, CALLBACK)
+
+

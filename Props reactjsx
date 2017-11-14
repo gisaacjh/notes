@@ -1,0 +1,60 @@
+PROPS
+
+es la forma en que los componentes se comunican
+
+Para renderizar un array de contenido html en react es:
+con el método
+{nombreDelElemento}
+--------------------------
+------------------------
+return (
+	<div id="app-cotainer">
+  	  <h2>texto texto<h2>
+	   
+	    {nombreDelElemento}
+ 			
+)
+
+
+para evaluar e imprimir algo dinámico usamos las llaves {example} y asi sólo renderiza el valor que contenga.
+
+var anotherNames = [
+	"Sally Bally",
+	"Shana Lorena",
+	"Paul Hall"
+     ]
+
+var mappedNames = anotherNames.map(function(name) {
+
+	return <li>{name}</li>
+});
+	
+	return (
+	<><>
+	<><>
+	<><>
+);
+
+--------------------------------------------
+--------------------------------------------
+todo componenete en react tiene this.props
+_________________________________
+---------------------------------
+
+import {
+  peopleInSpace,
+  spaceLaunches
+} from './datasource';
+
+ReactDOM.render(<App example={peopleInSpace}/>, document.getElementById)
+
+
+
+var exampleList = this.props.example.map(function(obj) {
+	return <li>{obj.name}</li>
+});
+
+
+
+ 
+

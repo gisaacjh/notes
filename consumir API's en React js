@@ -1,0 +1,32 @@
+la libreria de superagent para consumir API's
+para importarla 
+
+npm install --save-dev superagent
+
+importar superagent
+import request from 'superagent'
+
+metodos de React para las API's
+
+componentWillMount() {}  esta se usa para consumir una API porque se realiza antes de que se muestre el componente en el render; por eso se muestra antes del render.
+componentDidMount() {}
+shouldComponentUpdate() {}  solo regresa true o false para saber si se actualiza el componente
+componentWillUnMount() {} se ejecuta cuando el componente desaparece del DOM
+
+componentWillMount = () => {
+	request
+	  .get('')
+	  .then(data=>  )	
+
+}
+
+
+
+this.setState({      esto es para guardar un valor en el state
+  value: []
+		
+})
+
+
+const styles {}  es para añadir estilo de css directamente desde .jsx
+

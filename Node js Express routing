@@ -1,0 +1,71 @@
+NODE JS EXPRESS //  ROUTING WITH EXPRESS
+----------------------------------------
+
+crer una carpeta rutas dentro de src, ara crear un archivo .js para tener las rutas
+
+luego impotaer las librerias
+
+consT Router = requier('express').Router;
+const fs = require()
+
+// INIT ROUTER
+
+const pageRouter = Router();
+//crear rutas
+
+mando a llamar una variabe y le voy a decir que cuando alguien vaya a esta ruta .get('/', (req, res =>{ res.send('')})) ---esto es una ruta de servir
+recive la ruta y un callback con dos parametros un req y un res
+ , lo antertor es el objeto que tiene toda nuestra configuracion de ruta
+luego expoto este archivo
+
+module.exports = apiRouter ---- se iguala al nombre del archivo a exportar
+
+const PORT = process.env.PORT || 3000;
+
+
+
+luego poner la ruta en principal.js
+
+const page Router = require('./src/..');
+
+luego uso un app.use para usar el router
+
+app.use('/api/v1/', pageRouter);
+-------------------------------------------
+
+apiRouter
+	.get('/', (req, res) => {
+	res.json({
+			
+	})
+} )
+
+-------------------------------------------
+
+//Create 404 route
+app.use((req, res))
+
+-----------------------------------------
+Para el proyecto y en general por profesionalidad; crear dos configuraciones, una que renderice la pagina y otra que renderice las rutas.
+
+------------------------------------------------
+Steps for Routing with Express:
+
+I : Add routes/ directory in src/
+
+II : Add pageRouter.js and apiRouter.js
+
+III : Configure routes in pageRouter.js to send simple html strings and export router
+
+    /
+    /about
+
+IV : Configure routes in apiRouter.js to serve json data, and export router
+
+    /api/v1/tweets
+
+V : Import pageRouter in server.js and add to express application middleware, app.use('/',...)
+
+V : Import apiRouter in server.js and add to express application middleware, app.use('/api/v1',...)
+
+VII : Create the 404 (No Route Found) route handler in app.use(...) ) AFTER the pageRouter and apiRouter
